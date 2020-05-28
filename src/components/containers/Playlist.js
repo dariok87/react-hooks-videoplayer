@@ -11,4 +11,4 @@ const Playlist = (props) => {
   </>;
 };
 
-export default DKPlayer;
+export default Playlist;
