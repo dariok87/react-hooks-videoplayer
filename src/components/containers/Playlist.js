@@ -4,12 +4,11 @@ import Playlistitems from "../containers/Playlistitems";
 import NightMode from "../Nightmode";
 
 const DKPlayer = (props) => {
-  return (
-    <>
-      <Video />
-      <Playlist />
-    </>
-  );
+  <>
+    <NightMode />
+    <PlaylistHeader />
+    <Playlistitems />
+  </>;
 };
 
 export default DKPlayer;
