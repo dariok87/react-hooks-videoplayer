@@ -1,14 +1,14 @@
 import React from "react";
 import PlaylistHeader from "../PlaylistHeader";
-import Playlistitems from "../containers/Playlistitems";
+import PlaylistItems from "../containers/Playlistitems";
 import NightMode from "../Nightmode";
 
-const Playlist = (props) => {
+const Playlist = (props) => (
   <>
     <NightMode />
     <PlaylistHeader />
-    <Playlistitems />
-  </>;
-};
+    <PlaylistItems />
+  </>
+);
 
 export default Playlist;
