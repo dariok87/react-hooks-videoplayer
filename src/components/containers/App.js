@@ -1,5 +1,6 @@
 import React from "react";
+import DKPlayer from "./DKPlayer";
 
-const App = () => <div>Start here!</div>;
+const App = () => <DKPlayer />;
 
 export default App;
