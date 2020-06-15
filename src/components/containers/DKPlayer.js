@@ -13,6 +13,16 @@ const theme = {
   color: "#fff",
 };
 
+const themeLight = {
+  bgcolor: "#fff",
+  bgcolorItem: "#fff",
+  bgcolorItemActive: "#80a7b1",
+  bgcolorPlayed: "#7d99",
+  border: "1px solid #353535",
+  borderPlayer: "none",
+  color: "#353535",
+};
+
 const DKPlayer = (props) => {
   return (
     <>
