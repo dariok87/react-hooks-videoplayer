@@ -25,10 +25,12 @@ const themeLight = {
 
 const DKPlayer = (props) => {
   return (
-    <>
-      <Video />
-      <Playlist />
-    </>
+    <ThemeProvider>
+      <>
+        <Video />
+        <Playlist />
+      </>
+    </ThemeProvider>
   );
 };
 
