@@ -2,6 +2,7 @@ import React from "react";
 import { ThemeProvider } from "styled-components";
 import Video from "../Video";
 import Playlist from "../containers/Playlist";
+import StyledDKPlayer from "../styles/StyledDKPlayer";
 
 const theme = {
   bgcolor: "#353535",
