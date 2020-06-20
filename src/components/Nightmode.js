@@ -5,7 +5,11 @@ const NightMode = (props) => (
   <StyledNightmode>
     <span>NightMode:</span>
     <label className="switch">
-      <input type="checkbox" checked={nightMode}></input>
+      <input
+        type="checkbox"
+        checked={nightMode}
+        onChange={nightModeCallback}
+      ></input>
     </label>
   </StyledNightmode>
 );
