@@ -10,6 +10,7 @@ const NightMode = (props) => (
         checked={nightMode}
         onChange={nightModeCallback}
       ></input>
+      <span className="slider round" />
     </label>
   </StyledNightmode>
 );
