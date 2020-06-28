@@ -1,7 +1,7 @@
 import React from "react";
 import StyledNightmode from "./styles/StyledNightmode";
 
-const NightMode = (props) => (
+const NightMode = ({ nightModeCallback, nightMode }) => (
   <StyledNightmode>
     <span>NightMode:</span>
     <label className="switch">
