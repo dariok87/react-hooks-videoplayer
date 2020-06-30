@@ -3,7 +3,7 @@ import StyledPlaylistitem from "./styles/StyledPlaylistItem";
 
 const PlaylistItem = ({ video, active, played }) => (
   <StyledPlaylistitem active={active} played={played}>
-    PlaylistItem!!
+    <div className="wbn-player__video-nr">{video.num}</div>
   </StyledPlaylistitem>
 );
 
