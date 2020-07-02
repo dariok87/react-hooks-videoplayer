@@ -1,8 +1,13 @@
 import React from "react";
 import ReactPlayer from "react-player";
-import StyledVideWrapper from "./styles/StyledVideoWrapper";
+import StyledVideoWrapper from "./styles/StyledVideoWrapper";
 import StyledVideo from "./styles/StyledVideo";
 
-const Video = (props) => <div>Video!</div>;
+const Video = ({ active, autoplay, endCallback, progressCallback }) => (
+  <StyledVideo>
+    <StyledVideoWrapper>
+      <ReactPlayer />
+    </StyledVideoWrapper>
+  </StyledVideo>
 
 export default Video;
