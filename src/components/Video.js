@@ -6,7 +6,16 @@ import StyledVideo from "./styles/StyledVideo";
 const Video = ({ active, autoplay, endCallback, progressCallback }) => (
   <StyledVideo>
     <StyledVideoWrapper>
-      <ReactPlayer />
+      <ReactPlayer
+        width="100%"
+        height="100%"
+        style={{position: "absoute", top: "0"}}
+        playing={autoplay}
+        controls={true}
+        url={active.video}
+        onEnded={endCallback}
+        onProgress={progressCallback}
+      />
     </StyledVideoWrapper>
   </StyledVideo>
 
