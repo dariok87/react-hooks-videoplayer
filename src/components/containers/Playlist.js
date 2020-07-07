@@ -4,7 +4,7 @@ import PlaylistItems from "../containers/PlaylistItems";
 import NightMode from "../Nightmode";
 import StyledPlaylist from "../styles/StyledPlaylist";
 
-const Playlist = ({ video, active, nightModeCallback, NightMode }) => (
+const Playlist = ({ video, active, nightModeCallback, nightMode }) => (
   <StyledPlaylist>
     <NightMode />
     <PlaylistHeader />
