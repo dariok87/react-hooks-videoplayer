@@ -25,6 +25,19 @@ const themeLight = {
 };
 
 const DKPlayer = (props) => {
+
+  const nightModeCallback = () => {
+
+  }
+
+  const endCallback = () => {
+
+  }
+
+  const progresCallback = () => {
+    
+  }
+
   return (
     <ThemeProvider theme={state.nightMode ? theme : themeLight}>
       <StyledDKPlayer>
