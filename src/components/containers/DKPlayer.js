@@ -40,10 +40,12 @@ const DKPlayer = (props) => {
 
   return (
     <ThemeProvider theme={state.nightMode ? theme : themeLight}>
-      <StyledDKPlayer>
-        <Video />
-        <Playlist />
-      </StyledDKPlayer>
+      {state.videos !== null ? (
+        <StyledDKPlayer>
+          <Video />
+          <Playlist />
+        </StyledDKPlayer>
+        ) : null}
     </ThemeProvider>
   );
 };
