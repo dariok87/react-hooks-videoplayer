@@ -26,6 +26,8 @@ const themeLight = {
 
 const DKPlayer = (props) => {
 
+  const videos = JSON.parse(document.querySelector('[name="videos"]').value);
+
   const nightModeCallback = () => {
 
   }
