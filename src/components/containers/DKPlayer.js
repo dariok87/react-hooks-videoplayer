@@ -24,7 +24,7 @@ const themeLight = {
   color: "#353535",
 };
 
-const DKPlayer = (props) => {
+const DKPlayer = ({ match, history, location }) => {
 
   const videos = JSON.parse(document.querySelector('[name="videos"]').value);
 
