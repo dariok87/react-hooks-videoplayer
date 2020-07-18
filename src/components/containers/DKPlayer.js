@@ -40,6 +40,10 @@ const DKPlayer = ({ match, history, location }) => {
 
   }
 
+  useEffect(() => {
+    const videoId = match.params.activeVideo;
+  }, []);
+
   const endCallback = () => {
 
   }
