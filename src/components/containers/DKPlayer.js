@@ -42,6 +42,21 @@ const DKPlayer = ({ match, history, location }) => {
 
   useEffect(() => {
     const videoId = match.params.activeVideo;
+    if (videoId !== undefined) {
+      const newActiveVideo = state.videos.findIndex(
+        video => video.id === videoId
+      )
+      setState(prev => ({
+        ...prev,
+        activeVideo: prev.videos[newActiveVideo],
+        autoplay: location.play,
+      }));
+    } else {
+      history.push({
+        pathname: `/${state.activeVideo.id}`,
+        autoplay: false
+      })
+    }
   }, []);
 
   const endCallback = () => {
