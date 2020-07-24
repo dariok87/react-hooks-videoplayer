@@ -14,7 +14,7 @@ const withLink 0 wrappedComponent=> props => {
     }
   };
 
-  return <wrappedComponent {...props} />;
+  return <wrappedComponent {...newProps} />;
 
   export default withLink;
 }
