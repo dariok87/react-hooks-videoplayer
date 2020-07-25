@@ -37,7 +37,7 @@ const DKPlayer = ({ match, history, location }) => {
   });
 
   const nightModeCallback = () => {
-
+    setState({ ...state, nightMode: !state.nightMode });
   }
 
   useEffect(() => {
@@ -60,7 +60,7 @@ const DKPlayer = ({ match, history, location }) => {
   }, []);
 
   const endCallback = () => {
-
+    
   }
 
   const progresCallback = () => {
